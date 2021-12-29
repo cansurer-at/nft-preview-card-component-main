@@ -1,0 +1,158 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 25%;
+  height: 80%;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-container {
+  width: 100%;
+  height: 55%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.photo {
+  width: 89%;
+  height: 89%;
+  border-radius: 2%;
+}
+
+.overlay {
+  width: 22%;
+  height: 39%;
+  border-radius: 2%;
+  background-color: rgba(0, 255, 247, 0.5);
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo:hover + .overlay {
+  display: flex;
+}
+
+.eye {
+  width: 40px;
+  height: 30px;
+}
+
+.text-container {
+  width: 89%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.title {
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-size: 22px;
+}
+
+.title:hover {
+  color: hsl(178, 100%, 50%);
+}
+.desc {
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Outfit", sans-serif;
+  line-height: 1.5;
+}
+.number-row {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.money {
+  display: flex;
+  align-items: center;
+}
+
+.eth-text {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+  font-family: "Outfit", sans-serif;
+  margin-left: 5px;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+}
+
+.clock-text {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  margin-left: 5px;
+  color: hsl(215, 51%, 70%);
+}
+.hr {
+  border: 0.3px solid grey;
+  opacity: 0.3;
+}
+
+.name-container {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.creation {
+  margin-left: 13px;
+  color: hsl(215, 51%, 70%);
+  font-family: "Outfit", sans-serif;
+}
+
+.jules {
+  color: white !important;
+}
+
+.jules:hover {
+  color: hsl(178, 100%, 50%) !important;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .card {
+    width: 90%;
+  }
+  .overlay {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .card {
+    width: 70%;
+  }
+  .overlay {
+    width: 62%;
+  }
+}
